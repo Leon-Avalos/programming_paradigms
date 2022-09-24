@@ -3,7 +3,6 @@ public class Match {
     public Date date;
     public Team teamA;
     public Team teamB;
-    public Team mathWinner;
 
     /**
      * Creates a game between two teams
@@ -17,4 +16,9 @@ public class Match {
         this.teamB = teamB;
 
     }
+
+
+    /**
+     * Create match score randomly
+     */
 }

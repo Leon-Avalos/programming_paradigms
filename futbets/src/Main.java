@@ -33,6 +33,8 @@ public class Main {
 
         float totalBets = bets.stream().map(Bet::getBetAmount).reduce((a, b) -> a + b).get();
 
+
+
         System.out.println(total_bets.get());
         System.out.println(totalBets);
 
