@@ -15,4 +15,9 @@ public class User {
         this.name = name;
         this.account_balance = 0;
     }
+
+    @Override
+    public String toString(){
+        return this.name + " <ID>: " + this.Id;
+    }
 }
