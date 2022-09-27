@@ -1,10 +1,12 @@
 public class Bet {
+    public Team winnerTeam;
     public Match match;
     public String gamblerId;
     public float betAmount;
 
 
-    public Bet(Match match, String gamblerId, float betAmount) {
+    public Bet(Team winnerTeam,Match match, String gamblerId, float betAmount) {
+        this.winnerTeam = winnerTeam;
         this.match = match;
         this.gamblerId = gamblerId;
         this.betAmount = betAmount;
@@ -32,5 +34,10 @@ public class Bet {
 
     public void setBetAmount(float betAmount) {
         this.betAmount = betAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "Winner: " + this.winnerTeam + " [" + match.teamA + " vs " + match.teamB + "] " + gamblerId + " |" + betAmount;
     }
 }

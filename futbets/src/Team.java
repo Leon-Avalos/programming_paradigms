@@ -1,6 +1,14 @@
 public class Team {
     public String teamName;
-    public int goals_counter;
+    public int goalsCounter;
+
+    public int getGoalsCounter() {
+        return goalsCounter;
+    }
+
+    public void setGoalsCounter(int goalsCounter) {
+        this.goalsCounter = goalsCounter;
+    }
 
     /**
      * To create a Team we simply need a name, goals are initialized to 0 by default
@@ -10,6 +18,11 @@ public class Team {
         this.teamName = teamName;
 
         // Starts the goals marker to 0
-        this.goals_counter = 0;
+        this.goalsCounter = 0;
+    }
+
+    @Override
+    public String toString(){
+        return teamName;
     }
 }
